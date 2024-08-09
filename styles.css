@@ -21,7 +21,7 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     padding: 30px;
     max-width: 400px;
-    width: 100%;
+    width: 95%;
     text-align: center;
 }
 
@@ -32,8 +32,9 @@ h1 {
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     text-align: left;
+    padding: 10px;
 }
 
 label {
@@ -135,13 +136,19 @@ button:hover {
     font-size: 14px;
     color: #777;
 }
+#sourceCode{
+    margin-top: 0;
+}
 
 #copyStatus {
     margin-top: 15px;
     color: green;
 }
 
-
+#increment,
+#decrement{
+    background-color: #0056b3;
+}
 
     
 #keyCountGroup .input-group {
@@ -197,4 +204,14 @@ button:hover {
     border-radius: 5px;
     cursor: pointer;
     margin: 0;
+}
+
+
+#links{
+    display: flex;
+    justify-content: space-between;
+}
+
+#links a{
+    text-decoration: unset;
 }

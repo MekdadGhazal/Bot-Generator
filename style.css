@@ -1,0 +1,77 @@
+*{
+
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.containers{
+    width: 75px;
+    height: 90px;
+    position: relative;
+    
+    left: 50%;
+    transform: translate(-50%);
+    overflow-x: hidden;
+}
+
+.shape{
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    position: absolute;
+    border-radius: 5px;
+    top: 43px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: circle .5s cubic-bezier(0.7, 0, 0.3, 1) infinite
+}
+
+div.path{
+    animation: walk .5s cubic-bezier(0.7, 0, 0.3, 1)infinite;
+    top: 85%;
+    position: relative;
+}
+div.path span{
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background-color: #007bff;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%);
+    animation: coloring 5s infinite ease-in-out alternate;
+
+}
+div.path :first-child{
+    left: 12.5px;
+}
+div.path :nth-child(2){
+    left: 62.5px;
+}
+div.path :last-child{
+    left: 112.5px;
+}
+
+
+
+@keyframes circle {
+    to{
+        transform: translate(-50%,-50%) rotate(90deg);
+    }
+    
+}
+@keyframes walk {
+    to{
+        transform : translate(-50px)
+    }
+}
+
+
+@keyframes float {
+    to{
+        translate: 0  60px;
+    }
+}
+
+
