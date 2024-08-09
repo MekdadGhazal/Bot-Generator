@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const generatedKeysTitle = document.getElementById('generatedKeysTitle');
     const gameSelect = document.getElementById('gameSelect');
     const copyStatus = document.getElementById('copyStatus');
-    const sourceCode = document.getElementById('sourceCode');
+    // const sourceCode = document.getElementById('sourceCode');
     const gameSelectGroup = document.getElementById('gameSelectGroup');
     const keyCountGroup = document.getElementById('keyCountGroup');
 
@@ -234,9 +234,9 @@ document.addEventListener('DOMContentLoaded', () => {
         keyCountGroup.style.display = 'block';
     });
 
-    sourceCode.addEventListener('click', () => {
-        window.open('https://t.me/hamstersyria', '_blank');
-    });
+    // sourceCode.addEventListener('click', () => {
+    //     window.open('https://t.me/hamstersyria', '_blank');
+    // });
 
     const generateClientId = () => {
         const timestamp = Date.now();

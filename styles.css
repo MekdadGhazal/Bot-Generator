@@ -206,12 +206,3 @@ button:hover {
     margin: 0;
 }
 
-
-#links{
-    display: flex;
-    justify-content: space-between;
-}
-
-#links a{
-    text-decoration: unset;
-}

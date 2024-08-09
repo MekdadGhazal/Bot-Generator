@@ -75,3 +75,11 @@ div.path :last-child{
 }
 
 
+#links{
+    display: flex;
+    justify-content: space-between;
+}
+
+#links a{
+    text-decoration: unset;
+}
