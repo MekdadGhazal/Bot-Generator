@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // const EVENTS_DELAY = 20000;
-    const EVENTS_DELAY = 2000;
+    const EVENTS_DELAY = 20000;
+    // const EVENTS_DELAY = 2000;
 
     const games = {
         1: {
@@ -320,10 +320,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-    // const delayRandom = () => Math.random() / 3 + 1;
+    const delayRandom = () => Math.random() / 3 + 1;
 
     // const sleep = () => Promise.resolve();
-    const delayRandom = () => 0;
+
+
+    // Adjust the divisor to decrease the delay
+    const delayRandom = () => Math.random() / 6 + 0.5;
 
 });
 
