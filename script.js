@@ -322,8 +322,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // const delayRandom = () => Math.random() / 3 + 1;
 
-    const sleep = ms => new Promise(resolve => setTimeout(0, ms));
-
+    const sleep = () => Promise.resolve();
     const delayRandom = () => 0;
 
 });
