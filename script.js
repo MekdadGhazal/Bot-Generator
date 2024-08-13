@@ -320,7 +320,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-    const delayRandom = () => Math.random() / 3 + 1;
+    // const delayRandom = () => Math.random() / 3 + 1;
 
     // const sleep = () => Promise.resolve();
 
