@@ -318,11 +318,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+    const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
     // const delayRandom = () => Math.random() / 3 + 1;
 
-    const sleep = () => Promise.resolve();
+    // const sleep = () => Promise.resolve();
     const delayRandom = () => 0;
 
 });
