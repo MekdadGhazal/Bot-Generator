@@ -77,9 +77,11 @@ div.path :last-child{
 
 #links{
     display: flex;
-    justify-content: space-between;
+/*    justify-content: space-between;*/
+    justify-content: center;
 }
 
 #links a{
     text-decoration: unset;
+    color: #333;
 }

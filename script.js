@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const EVENTS_DELAY = 20000;
+    // const EVENTS_DELAY = 20000;
+    const EVENTS_DELAY = 2000;
 
     const games = {
         1: {
@@ -41,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // const sourceCode = document.getElementById('sourceCode');
     const gameSelectGroup = document.getElementById('gameSelectGroup');
     const keyCountGroup = document.getElementById('keyCountGroup');
+    const loadingShape = document.getElementById('loadingShape');
 
 
     startBtn.addEventListener('click', async () => {
@@ -204,12 +206,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        progressBar.style.width = '100%';
+        //progressBar.style.width = '100%';
 
         
 
 
         progressLog.innerText = 'Completed';
+        loadingShape.classList.add('hidden');
+
 
         // startBtn.classList.remove('hidden');
         // keyCountSelect.classList.remove('hidden');
@@ -314,9 +318,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+    // const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-    const delayRandom = () => Math.random() / 3 + 1;
+    // const delayRandom = () => Math.random() / 3 + 1;
+
+    const sleep = ms => new Promise(resolve => setTimeout(0, ms));
+
+    const delayRandom = () => 0;
+
 });
 
 
@@ -341,11 +350,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const generateMore = document.getElementById('generateMore');
+    const loadingShape = document.getElementById('loadingShape');
 
     generateMore.addEventListener('click', function() {
         progressContainer.classList.add('hidden');
         progressText.classList.remove('hidden');
         progressBarLine.classList.remove('hidden');
+        loadingShape.classList.remove('hidden');
 
         keyContainer.classList.add('hidden');
         keyCountLabel.classList.add('hidden');
