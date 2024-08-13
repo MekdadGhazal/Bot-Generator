@@ -5,33 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Summary</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        h2 {
-            color: #333;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-    </style>
 </head>
 
 <body>
     <h2>Project Summary</h2>
     <p>This project is a web-based application designed for generating promo codes for various games. Users can select a game, specify the number of promo codes to generate, and witness the generation process with a progress bar. The application enables users to copy the generated codes to the clipboard effortlessly.</p>
 
-    <h3>Features:</h3>
+<div>
+	<h3>Features:</h3>
     <ul>
         <li>Game Selection: Choose from a list of available games.</li>
         <li>Key Count Selection: Specify the number of keys to generate (1 to 10).</li>
@@ -40,12 +21,15 @@
         <li>Copy to Clipboard: Easily copy keys with a single click.</li>
         <li>Responsive Design: Ensures usability across different screen sizes.</li>
     </ul>
+</div>
 
-    <h3>Getting Started:</h3>
+<div>
+	<h3>Getting Started:</h3>
      <p><strong>Open the Project:</strong><br>Navigate to the project directory and launch the <code>index.html</code> file in a web browser.</p>
-    
+</div>
 
-    <h3>Usage:</h3>
+<div>
+	<h3>Usage:</h3>
     <ol>
         <li><strong>Select a Game:</strong><br>Choose a game from the dropdown menu.</li>
         <li><strong>Select Number of Keys:</strong><br>Specify the number of keys to generate from the dropdown menu.</li>
@@ -57,6 +41,8 @@
         </li>
         <li><strong>Generate More Keys:</strong><br>Reset the form and generate additional keys by clicking the "Generate More Keys" button.</li>
     </ol>
+</div>
+   
 </body>
 
 </html>
