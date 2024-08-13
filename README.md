@@ -9,7 +9,7 @@
 
 <body>
     <h2>Project Summary</h2>
-    <p>This project is a web-based application designed for generating promo codes for various games. Users can select a game, specify the number of promo codes to generate, and witness the generation process with a progress bar. The application enables users to copy the generated codes to the clipboard effortlessly.</p>
+    <p>This project is a web-based application designed for generating promo codes for various games in Hamster Kombat. Users can select a game, specify the number of promo codes to generate, and witness the generation process with a progress bar. The application enables users to copy the generated codes to the clipboard effortlessly.</p>
 
 <div>
 	<h3>Features:</h3>
@@ -42,7 +42,11 @@
         <li><strong>Generate More Keys:</strong><br>Reset the form and generate additional keys by clicking the "Generate More Keys" button.</li>
     </ol>
 </div>
-   
+
+<div>
+	<h4>To Use my Bot in Telegram :</h4>
+	<a href="https://t.me/mortygenerator_bot/KeyGenerator" target="_blank">press here</a>
+</div>
 </body>
 
 </html>
