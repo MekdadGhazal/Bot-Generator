@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const EVENTS_DELAY = 10000;
+    const EVENTS_DELAY = 20000;
     
-
     const games = {
         1: {
             name: 'Riding Extreme 3D',
@@ -56,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         keyCountLabel.classList.remove('hidden');
         keyCountLabel.innerText = `Number of keys: ${keyCount}`;
 
-        progressBar.style.width = '0%';
+        // progressBar.style.width = '0%';
         progressText.innerText = '0%';
         progressLog.innerText = 'Starting...';
         progressContainer.classList.remove('hidden');
@@ -324,12 +323,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
     const delayRandom = () => Math.random() / 3 + 1;
-
-    // const sleep = () => Promise.resolve();
-
-
-    // Adjust the divisor to decrease the delay
-    // const delayRandom = () => Math.random() / 6 + 0.5;
 
 });
 
