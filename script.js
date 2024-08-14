@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const EVENTS_DELAY = 20000;
-    // const EVENTS_DELAY = 2000;
+    const EVENTS_DELAY = 10000;
+    
 
     const games = {
         1: {
@@ -83,7 +83,9 @@ document.addEventListener('DOMContentLoaded', () => {
             try {
                 clientToken = await login(clientId, game.appToken);
             } catch (error) {
-                alert(`Failed to login: ${error.message}`);
+                // alert(`Failed to login: ${error.message}`);
+                alert("Oops! Failed to login");
+
                 startBtn.disabled = false;
                 return null;
             }
@@ -102,7 +104,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 updateProgress(30 / keyCount, 'Generating key...');
                 return key;
             } catch (error) {
-                alert(`Failed to generate key: ${error.message}`);
+                // alert(`Failed to generate key: ${error.message}`);
+                alert("Oops! Failed to generate key");
                 return null;
             }
         };
@@ -320,13 +323,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-    // const delayRandom = () => Math.random() / 3 + 1;
+    const delayRandom = () => Math.random() / 3 + 1;
 
     // const sleep = () => Promise.resolve();
 
 
     // Adjust the divisor to decrease the delay
-    const delayRandom = () => Math.random() / 6 + 0.5;
+    // const delayRandom = () => Math.random() / 6 + 0.5;
 
 });
 
